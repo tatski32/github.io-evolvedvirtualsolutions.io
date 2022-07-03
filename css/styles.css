@@ -86,13 +86,16 @@
 }
 
 @media screen and (max-width: 960px) {
+    .navbar{
+        position: absolute;
+        width: 100%;
+        max-width: 1400px;
+    }
     .navbar_container{
         display: flex;
         justify-content: space-between;
         height: 80px;
         z-index: 1;
-        width: 100%;
-        max-width: 1400px;
         padding: 0;
     }
 
@@ -145,7 +148,7 @@
 
     #mobile-menu {
         position: absolute;
-        top: 20%;
+        top: 30%;
         right: 5%;
         transform: translate(5%, 20%);
     }
@@ -185,6 +188,9 @@
 @media screen and (max-width: 500px) {
     .navbar{
         height: 20vh;
+        position: absolute;
+        width: 100%;
+        max-width: 1400px;
     }
     .navbar_container{
         display: grid;
@@ -192,8 +198,6 @@
         justify-content: center;
         height: 155px;
         z-index: 1;
-        width: 100%;
-        max-width: 1400px;
         padding: 0;
     }
 
@@ -365,7 +369,7 @@
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 /*
     background: url(images/hero-banner.jpg) no-repeat center top fixed; 
     -webkit-background-size: cover;
@@ -384,6 +388,9 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 960px) {
+    .main {
+        margin-top: 90px;
+    }
     .main_container {
         display: grid;
         grid-template-columns: auto;
@@ -409,6 +416,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    .main {
+        margin-top: 105px;
+    }
     .main_container {
         display: grid;
         grid-template-columns: auto;
